@@ -28,8 +28,8 @@ features = [ "threads" ]
 
 [dependencies.libavif-sys]
 version = "=0.13.1"
-default-features = false
-features = [ "codec-aom" ]
+# default-features = false
+# features = [ "codec-aom" ]
 
 [dependencies.libwebp-sys2]
 version = "=0.1.2"
