@@ -290,8 +290,8 @@ fn make_config(quality: Option<NonZeroU8>) -> Result<WebPConfig, RefractError> {
 
 	// Lossy bits.
 	if let Some(_quality) = quality {
-		config.quality = 60.0; // f32::from(quality.get());
-		config.method = 4; // 6;
+		config.quality = 44.0; // f32::from(quality.get());
+		config.method = 2; // 6;
 		config.pass = 1; // 10;
 	}
 	// Lossless bits.
