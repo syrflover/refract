@@ -289,10 +289,10 @@ fn make_config(quality: Option<NonZeroU8>) -> Result<WebPConfig, RefractError> {
 	maybe_die(unsafe { WebPValidateConfig(&config) })?;
 
 	// Lossy bits.
-	if let Some(quality) = quality {
-		config.quality = f32::from(quality.get());
-		config.method = 6;
-		config.pass = 10;
+	if let Some(_quality) = quality {
+		config.quality = 60.0; // f32::from(quality.get());
+		config.method = 4; // 6;
+		config.pass = 1; // 10;
 	}
 	// Lossless bits.
 	else {
